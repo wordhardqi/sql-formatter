@@ -26,6 +26,7 @@
     "test": "jest",
     "test:watch": "npm run test -- --watch",
     "check": "npm run lint && npm run test",
+    "prepare": "npm run build",
     "build": "npm run build:commonjs && npm run build:umd && npm run build:umd:min",
     "build:commonjs": "babel src --out-dir lib",
     "build:umd": "cross-env NODE_ENV=development webpack src/sqlFormatter.js dist/sql-formatter.js",

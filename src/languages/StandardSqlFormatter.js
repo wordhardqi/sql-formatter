@@ -94,8 +94,8 @@ export default class StandardSqlFormatter {
                 reservedToplevelWords,
                 reservedNewlineWords,
                 stringTypes: [`""`, "N''", "''", "``", "[]"],
-                openParens: ["(", "CASE"],
-                closeParens: [")", "END"],
+                openParens: ["(", "{", "CASE"],
+                closeParens: [")", "}", "END"],
                 indexedPlaceholderTypes: ["?"],
                 namedPlaceholderTypes: ["@", ":"],
                 lineCommentTypes: ["#", "--"]
