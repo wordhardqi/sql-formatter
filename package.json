@@ -31,7 +31,7 @@
     "build:commonjs": "babel src --out-dir lib",
     "build:umd": "cross-env NODE_ENV=development webpack src/sqlFormatter.js dist/sql-formatter.js",
     "build:umd:min": "cross-env NODE_ENV=production webpack src/sqlFormatter.js dist/sql-formatter.min.js",
-    "prepublish": "npm run clean && npm run check && npm run build"
+    "prepublishOnly": "npm run clean && npm run check && npm run build"
   },
   "repository": {
     "type": "git",
